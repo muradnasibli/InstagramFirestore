@@ -21,17 +21,17 @@ class MainTabController : UITabBarController{
     // MARK: - Helpers
     
     func configureViewControllers() {
-        //view.backgroundColor = UIColor.red
+        view.backgroundColor = .white
         
-        let feed = templateNavigationController(unselectedImage: UIImage(imageLiteralResourceName: "home_unselected"), selectedImage: UIImage(imageLiteralResourceName: "home_selected"), rootViewController: FeedController())
+        let feed = templateNavigationController(unselectedImage: "home_unselected", selectedImage: "home_selected", rootViewController: FeedController())
         
-        let search = templateNavigationController(unselectedImage: UIImage(imageLiteralResourceName: "search_unselected"), selectedImage: UIImage(imageLiteralResourceName: "search_selected"), rootViewController: SearchController())
+        let search = templateNavigationController(unselectedImage: "search_unselected", selectedImage: "search_selected", rootViewController: SearchController())
         
-        let imageSelector = templateNavigationController(unselectedImage: UIImage(imageLiteralResourceName: "plus_unselected"), selectedImage: UIImage(imageLiteralResourceName: "plus_unselected"), rootViewController: ImageSelectorController())
+        let imageSelector = templateNavigationController(unselectedImage: "plus_unselected", selectedImage: "plus_unselected", rootViewController: ImageSelectorController())
         
-        let notifications = templateNavigationController(unselectedImage: UIImage(imageLiteralResourceName: "like_unselected"), selectedImage: UIImage(imageLiteralResourceName: "like_selected"), rootViewController: NotificationsController())
+        let notifications = templateNavigationController(unselectedImage: "like_unselected", selectedImage: "like_selected", rootViewController: NotificationsController())
         
-        let profile = templateNavigationController(unselectedImage: UIImage(imageLiteralResourceName: "profile_unselected"), selectedImage: UIImage(imageLiteralResourceName: "profile_selected"), rootViewController: ProfileController())
+        let profile = templateNavigationController(unselectedImage: "profile_unselected", selectedImage: "profile_selected"ß, rootViewController: ProfileController())
         
         viewControllers = [feed, search, imageSelector, notifications, profile]
     }
@@ -40,8 +40,8 @@ class MainTabController : UITabBarController{
                                       rootViewController: UIViewController) -> UINavigationController {
         
         let nav = UINavigationController(rootViewController: rootViewController)
-        nav.tabBarItem.image = unselectedImage
-        nav.tabBarItem.selectedImage = selectedImage
+        nav.tabBarItem.image = UIImage(imageLiteralResourceName: unselectedImage)
+        nav.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: selectedImage)
         nav.navigationBar.tintColor = .black
         return nav
     }
