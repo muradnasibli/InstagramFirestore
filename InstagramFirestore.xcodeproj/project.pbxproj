@@ -15,6 +15,8 @@
 		704E03D6282192F800CCAFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E03D4282192F800CCAFFB /* Main.storyboard */; };
 		704E03D8282192F900CCAFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704E03D7282192F900CCAFFB /* Assets.xcassets */; };
 		704E03DB282192F900CCAFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E03D9282192F900CCAFFB /* LaunchScreen.storyboard */; };
+		707ABF2A288843F900643024 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ABF29288843F900643024 /* LoginController.swift */; };
+		707ABF2C2888440200643024 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ABF2B2888440200643024 /* RegistrationController.swift */; };
 		70A221122826665F00652F27 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A221112826665F00652F27 /* TestController.swift */; };
 		70D0B9CD282475D300DF502A /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CC282475D300DF502A /* MainTabController.swift */; };
 		70D0B9CF282477E800DF502A /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CE282477E800DF502A /* FeedController.swift */; };
@@ -35,6 +37,8 @@
 		704E03D7282192F900CCAFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704E03DA282192F900CCAFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704E03DC282192F900CCAFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707ABF29288843F900643024 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		707ABF2B2888440200643024 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		70A221112826665F00652F27 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		70D0B9CC282475D300DF502A /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		70D0B9CE282477E800DF502A /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,15 @@
 			path = InstagramFirestore;
 			sourceTree = "<group>";
 		};
+		707ABF28288843E400643024 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				707ABF29288843F900643024 /* LoginController.swift */,
+				707ABF2B2888440200643024 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		70D0B9C4282473C100DF502A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 		70D0B9C5282473CC00DF502A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				707ABF28288843E400643024 /* Authentication */,
 				70D0B9CC282475D300DF502A /* MainTabController.swift */,
 				70D0B9CE282477E800DF502A /* FeedController.swift */,
 				70D0B9D0282477F600DF502A /* SearchController.swift */,
@@ -213,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707ABF2C2888440200643024 /* RegistrationController.swift in Sources */,
 				704E03D3282192F800CCAFFB /* ViewController.swift in Sources */,
 				70D0B9D32824780700DF502A /* ImageSelectorController.swift in Sources */,
 				70D0B9D1282477F600DF502A /* SearchController.swift in Sources */,
+				707ABF2A288843F900643024 /* LoginController.swift in Sources */,
 				704E03CF282192F800CCAFFB /* AppDelegate.swift in Sources */,
 				702E06CA2873756E00DC326C /* FeedCell.swift in Sources */,
 				70D0B9CF282477E800DF502A /* FeedController.swift in Sources */,
