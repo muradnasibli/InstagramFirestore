@@ -14,8 +14,6 @@ class MainTabController : UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewControllers()
-        
-        tabBar.backgroundColor = .white
     }
     
     // MARK: - Helpers
@@ -23,7 +21,8 @@ class MainTabController : UITabBarController{
     func configureViewControllers() {
         view.backgroundColor = .white
         
-        let feed = templateNavigationController(unselectedImage: "home_unselected", selectedImage: "home_selected", rootViewController: FeedController())
+        let layout = UICollectionViewFlowLayout()
+        let feed = templateNavigationController(unselectedImage: "home_unselected", selectedImage: "home_selected", rootViewController: FeedController(collectionViewLayout: layout))
         
         let search = templateNavigationController(unselectedImage: "search_unselected", selectedImage: "search_selected", rootViewController: SearchController())
         
@@ -31,12 +30,16 @@ class MainTabController : UITabBarController{
         
         let notifications = templateNavigationController(unselectedImage: "like_unselected", selectedImage: "like_selected", rootViewController: NotificationsController())
         
-        let profile = templateNavigationController(unselectedImage: "profile_unselected", selectedImage: "profile_selected"ß, rootViewController: ProfileController())
+        let profile = templateNavigationController(unselectedImage: "profile_unselected", selectedImage: "profile_selected", rootViewController: ProfileController())
         
         viewControllers = [feed, search, imageSelector, notifications, profile]
+        
+        // TabBar modification
+        tabBar.backgroundColor = .white
+        tabBar.tintColor = .black
     }
     
-    func templateNavigationController(unselectedImage: UIImage, selectedImage: UIImage,
+    func templateNavigationController(unselectedImage: String, selectedImage: String,
                                       rootViewController: UIViewController) -> UINavigationController {
         
         let nav = UINavigationController(rootViewController: rootViewController)

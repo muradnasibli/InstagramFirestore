@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702E06CA2873756E00DC326C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E06C92873756E00DC326C /* FeedCell.swift */; };
+		702E06CC287376E700DC326C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E06CB287376E700DC326C /* Extensions.swift */; };
 		704E03CF282192F800CCAFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E03CE282192F800CCAFFB /* AppDelegate.swift */; };
 		704E03D1282192F800CCAFFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E03D0282192F800CCAFFB /* SceneDelegate.swift */; };
 		704E03D3282192F800CCAFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E03D2282192F800CCAFFB /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		702E06C92873756E00DC326C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		702E06CB287376E700DC326C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		704E03CB282192F800CCAFFB /* InstagramFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704E03CE282192F800CCAFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704E03D0282192F800CCAFFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		70D0B9C4282473C100DF502A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				702E06CB287376E700DC326C /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 		70D0B9CA282473DC00DF502A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				702E06C92873756E00DC326C /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,9 +217,11 @@
 				70D0B9D32824780700DF502A /* ImageSelectorController.swift in Sources */,
 				70D0B9D1282477F600DF502A /* SearchController.swift in Sources */,
 				704E03CF282192F800CCAFFB /* AppDelegate.swift in Sources */,
+				702E06CA2873756E00DC326C /* FeedCell.swift in Sources */,
 				70D0B9CF282477E800DF502A /* FeedController.swift in Sources */,
 				70A221122826665F00652F27 /* TestController.swift in Sources */,
 				70D0B9CD282475D300DF502A /* MainTabController.swift in Sources */,
+				702E06CC287376E700DC326C /* Extensions.swift in Sources */,
 				70D0B9D72824783D00DF502A /* NotificationController.swift in Sources */,
 				704E03D1282192F800CCAFFB /* SceneDelegate.swift in Sources */,
 				70D0B9D52824781500DF502A /* ProfileController.swift in Sources */,
