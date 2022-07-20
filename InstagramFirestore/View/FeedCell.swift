@@ -62,26 +62,24 @@ class FeedCell : UICollectionViewCell {
     private let likesLabel: UILabel = {
         let label = UILabel()
         label.text = "1 like"
-        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.font = UIFont.boldSystemFont(ofSize: 13)
         return label
     }()
     
     private let captionLabel: UILabel = {
         let label = UILabel()
         label.text = "Some test caption for now..."
-        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
     }()
     
-    private let postTimeLabe: UILabel = {
+    private let postTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "2 days ago"
         label.textColor = .lightGray
         label.font = UIFont.boldSystemFont(ofSize: 12)
         return label
     }()
-    
-    private var stackView = UIStackView()
     
     // MARK: - Lifecycle
     
@@ -106,6 +104,15 @@ class FeedCell : UICollectionViewCell {
         
         configureActionButtons()
         
+        addSubview(likesLabel)
+        likesLabel.anchor(top: likeButton.bottomAnchor, left: leftAnchor, paddingTop: -4, paddingLeft: 8)
+        
+        addSubview(captionLabel)
+        captionLabel.anchor(top: likesLabel.bottomAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 8)
+        
+        addSubview(postTimeLabel)
+        postTimeLabel.anchor(top: captionLabel.bottomAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 8)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -121,7 +128,7 @@ class FeedCell : UICollectionViewCell {
     // MARK: - Helpers
     
     func configureActionButtons(){
-        stackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
+        let stackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
         
