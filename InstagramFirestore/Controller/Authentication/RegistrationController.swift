@@ -47,6 +47,19 @@ class RegistrationController: UIViewController {
         return button
     }()
     
+    private let alreadyHaveAccountButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.attributedTitle(firstPart: "Already have an account?", secondPart: "Log In")
+        button.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
+        return button
+    }()
+    
+    // MARK: - Actions
+    @objc func handleShowLogin(){
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -73,5 +86,8 @@ class RegistrationController: UIViewController {
         stackView.anchor(top: plushPhotoButton.bottomAnchor, left: view.leftAnchor,
                      right: view.rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
         
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.centerX(inView: view)
+        alreadyHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor)
     }
 }
