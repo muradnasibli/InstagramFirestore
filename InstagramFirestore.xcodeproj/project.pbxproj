@@ -19,6 +19,7 @@
 		707ABF2C2888440200643024 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ABF2B2888440200643024 /* RegistrationController.swift */; };
 		709CA329288955A900935C28 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CA328288955A900935C28 /* CustomTextField.swift */; };
 		709CA32B28899E9300935C28 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CA32A28899E9200935C28 /* AuthenticationViewModel.swift */; };
+		709CA32D2889E3D000935C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 709CA32C2889E3D000935C28 /* GoogleService-Info.plist */; };
 		70A221122826665F00652F27 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A221112826665F00652F27 /* TestController.swift */; };
 		70D0B9CD282475D300DF502A /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CC282475D300DF502A /* MainTabController.swift */; };
 		70D0B9CF282477E800DF502A /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CE282477E800DF502A /* FeedController.swift */; };
@@ -43,6 +44,7 @@
 		707ABF2B2888440200643024 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		709CA328288955A900935C28 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		709CA32A28899E9200935C28 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		709CA32C2889E3D000935C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		70A221112826665F00652F27 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		70D0B9CC282475D300DF502A /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		70D0B9CE282477E800DF502A /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				704E03D7282192F900CCAFFB /* Assets.xcassets */,
 				704E03D9282192F900CCAFFB /* LaunchScreen.storyboard */,
 				704E03DC282192F900CCAFFB /* Info.plist */,
+				709CA32C2889E3D000935C28 /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirestore;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				704E03DB282192F900CCAFFB /* LaunchScreen.storyboard in Resources */,
+				709CA32D2889E3D000935C28 /* GoogleService-Info.plist in Resources */,
 				704E03D8282192F900CCAFFB /* Assets.xcassets in Resources */,
 				704E03D6282192F800CCAFFB /* Main.storyboard in Resources */,
 			);
