@@ -17,6 +17,7 @@
 		704E03DB282192F900CCAFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E03D9282192F900CCAFFB /* LaunchScreen.storyboard */; };
 		707ABF2A288843F900643024 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ABF29288843F900643024 /* LoginController.swift */; };
 		707ABF2C2888440200643024 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ABF2B2888440200643024 /* RegistrationController.swift */; };
+		709CA329288955A900935C28 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CA328288955A900935C28 /* CustomTextField.swift */; };
 		70A221122826665F00652F27 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A221112826665F00652F27 /* TestController.swift */; };
 		70D0B9CD282475D300DF502A /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CC282475D300DF502A /* MainTabController.swift */; };
 		70D0B9CF282477E800DF502A /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0B9CE282477E800DF502A /* FeedController.swift */; };
@@ -39,6 +40,7 @@
 		704E03DC282192F900CCAFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707ABF29288843F900643024 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		707ABF2B2888440200643024 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		709CA328288955A900935C28 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		70A221112826665F00652F27 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		70D0B9CC282475D300DF502A /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		70D0B9CE282477E800DF502A /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				702E06C92873756E00DC326C /* FeedCell.swift */,
+				709CA328288955A900935C28 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				70D0B9D72824783D00DF502A /* NotificationController.swift in Sources */,
 				704E03D1282192F800CCAFFB /* SceneDelegate.swift in Sources */,
 				70D0B9D52824781500DF502A /* ProfileController.swift in Sources */,
+				709CA329288955A900935C28 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
